@@ -13,13 +13,13 @@ if (isNaN(kilometers)) {
 
 
 // Chiedere l'età del passeggero.
-var userAge = parseInt(prompt("Inserire l'età"));
+/* var userAge = parseInt(prompt("Inserire l'età"));
 console.log(userAge);
 document.getElementById('age').innerHTML = 'Età del passeggero: ' + userAge;
 
 if (isNaN(userAge)) {
     alert('Il valore inserito non è valido! Inserire un numero.')
-}
+} */
 
 /* 
 // Clcolare il prezzo totale del viaggio
@@ -51,3 +51,17 @@ if (userAge < 18 ) {
     document.getElementById('result').innerHTML = 'Il prezzo è ' + overPrice.toFixed(2) + ' \u20ac';
 }
  */
+
+//Generare il numero di carrozza
+var numberCarriage = Math.floor(Math.random() * 10) + 1;
+document.getElementById('number_carriage').innerHTML = numberCarriage;
+
+//Generare il codice CP
+var numerbCode = Math.floor(Math.random() * 100000) + 90000;
+document.getElementById('number_code').innerHTML = numerbCode;
+
+//Geneare un evento al click sui button
+var pulsante = document.querySelector('.buttons .button:last-child');
+pulsante.addEventListener('click', function() {
+    alert('Annulla')
+})

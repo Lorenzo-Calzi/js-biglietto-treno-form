@@ -1,7 +1,11 @@
+//Chiedere il nome all'utente
+var userName = prompt('Inserisci il tuo nome');
+document.getElementById('user_name').innerHTML = userName;
+
 // Chiedere all'utente il numero di chilometri che vuole percorrere 
 var kilometers = parseInt(prompt('Inserire il numero di chilometri da percorrere'));
 console.log(kilometers);
-document.getElementById('distance').innerHTML = 'Numero di chilometri da percorrere: ' + kilometers + ' Km';
+document.getElementById('distance').innerHTML = kilometers;
 
 if (isNaN(kilometers)) {
     alert('Il valore inserito non è valido! Inserire un numero.')
@@ -17,7 +21,7 @@ if (isNaN(userAge)) {
     alert('Il valore inserito non è valido! Inserire un numero.')
 }
 
-
+/* 
 // Clcolare il prezzo totale del viaggio
 var priceForKm = 0.21;
 var ticketPrice = kilometers * priceForKm;
@@ -46,3 +50,4 @@ if (userAge < 18 ) {
     var result;
     document.getElementById('result').innerHTML = 'Il prezzo è ' + overPrice.toFixed(2) + ' \u20ac';
 }
+ */

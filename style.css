@@ -8,6 +8,8 @@ main{
     width: 100%;
     height: 100vh;
 }
+
+/* MAIN TOP */
 .title{
     text-align: center;
     color: white;
@@ -16,11 +18,11 @@ main{
 .top{
     width: 80%;
     margin: auto;
+    margin-bottom: 30px;
     background-color: white;
     border-radius: 10px;
     padding-bottom: 10px;
 }
-
 .container{
     width: 85%;
     display: flex;
@@ -29,7 +31,6 @@ main{
     padding-top: 30px;
     margin-bottom: 50px;
 }
-
 .left{
     width: 33.3%;
     height: 50px;
@@ -71,4 +72,47 @@ main{
 .buttons .button:first-child{
     border: 2px solid rgba(156, 96, 157, 1);
 }
+/* /MAIN TOP */
+
+/* MAIN BOTTOM */
+.bottom{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+.user_recup{
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 1);
+    border-right: none;
+}
+.user_left{
+    width: 30%;
+    background-color: rgba(128, 128, 128, 1);
+    padding: 25px;
+    font-size: 20px;
+}
+.user_right{
+    width: 70%;
+    display: flex;
+}
+.offer, .carriage, .code, .cost{
+    padding: 30px;
+    width: 25%;
+}
+.right_top{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.right_bottom{
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+
+
 

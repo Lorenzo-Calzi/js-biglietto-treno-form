@@ -2,6 +2,7 @@
 var userName = prompt('Inserisci il tuo nome');
 document.getElementById('user_name').innerHTML = userName;
 
+
 // Chiedere all'utente il numero di chilometri che vuole percorrere 
 var kilometers = parseInt(prompt('Inserire il numero di chilometri da percorrere'));
 console.log(kilometers);
@@ -61,7 +62,9 @@ var numerbCode = Math.floor(Math.random() * 100000) + 90000;
 document.getElementById('number_code').innerHTML = numerbCode;
 
 //Geneare un evento al click sui button
-var pulsante = document.querySelector('.buttons .button:last-child');
-pulsante.addEventListener('click', function() {
-    alert('Annulla')
+var btnAnnulla = document.getElementById('btn-annulla');
+
+btnAnnulla.addEventListener('click', function() {
+    var userNameInput = document.getElementById('user_name');
+    userNameInput.value = "";
 })

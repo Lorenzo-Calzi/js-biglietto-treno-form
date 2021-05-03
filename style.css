@@ -7,18 +7,20 @@ main{
     background-color: rgba(185, 20, 80, 1);
     width: 100%;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
 }
 
 /* MAIN TOP */
 .title{
     text-align: center;
     color: white;
-    padding: 20px;
 }
 .top{
     width: 70%;
     margin: auto;
     margin-bottom: 30px;
+    margin-top: 25px;
     background-color: white;
     border-radius: 10px;
     padding-bottom: 10px;
@@ -43,20 +45,17 @@ main{
     width: 33.3%;
     height: 50px;
 }
-
 .container h4{
     margin-bottom: 20px;
     color: rgba(185, 20, 80, 1);
     font-size: 20px;
 }
-
 .rettangolo{
     border: 1px solid rgba(185, 20, 80, 1);
     border-radius: 5px;
-    padding: 3px 90px 3px 90px;
+    padding: 3px 3px 3px 3px;
     font-size: 20px;
 }
-
 .buttons{
     display: flex;
     justify-content: center;
@@ -75,6 +74,9 @@ button{
 .buttons button:first-child{
     border: 2px solid rgba(156, 96, 157, 1);
 }
+input{
+    text-align: center;
+}
 /* /MAIN TOP */
 
 /* MAIN BOTTOM */
@@ -85,7 +87,8 @@ button{
     padding: 20px;
 }
 .bottom h3{
-    font-size: 30px;
+    font-size: 27px;
+    margin-bottom: 5px;
 }
 .user_recup{
     display: flex;
@@ -93,7 +96,7 @@ button{
     border-right: none;
 }
 .user_left{
-    width: 30%;
+    width: 25%;
     background-color: rgba(128, 128, 128, 1);
     padding: 25px;
     font-size: 20px;
@@ -117,6 +120,20 @@ button{
     height: 70%;
     display: flex;
     align-items: center;
+}
+.user_recup h4{
+    font-size: 23px;
+}
+#recup_name{
+    font-size: 30px;
+    font-weight: 600;
+}
+#sales, #number_carriage, #number_code, #price{
+    font-size: 20px;
+    font-weight: 500; 
+}
+#sales{
+    line-height: 15px;
 }
 
 

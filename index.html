@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno Form</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
      
@@ -17,16 +19,21 @@
 
                 <div class="container">
                     <div class="left">
+                        
                         <h4>Nome Cognome</h4>
-                        <span id="user_name" class="rettangolo"></span>
+                        <input id="user_name" placeholder="Nome" name="name" value="" class="rettangolo">
                     </div>
                     <div class="center">
                         <h4>Km da percorrere</h4>
-                        <span id="distance" class="rettangolo">20</span>
+                        <input id="distance" placeholder="Km" name="name" value="" class="rettangolo">
                     </div>
                     <div class="right">
                         <h4>Fascia d'età</h4>
-                        <span class="rettangolo">Minorenne</span>
+                        <select name="age" id="age" class="rettangolo">
+                            <option id="prova" value="Minorenne">Minorenne</option>
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Anziano">Anziano</option>
+                        </select>
                     </div>
                 </div>
 
@@ -35,27 +42,30 @@
 
                     <button id="btn-annulla"type="button" name="annulla">Annulla</button>
                 </div>
-                
+  
             </div>
 
             <h1 class="title">IL TUO BIGLIETTO</h1>
             <div class="bottom">
                 <h3>DETTAGLIO PASSEGGERI</h3>
+
                 <div class="user_recup">
                     <div class="user_left">
                         <h3>NOME PASSEGGERO</h3>
-                        <span>Pippo</span>
+                        <span id="recup_name"></span>
                     </div>
 
                     <div class="user_right">
+
                         <div class="offer">
                             <div class="right_top">
                                 <h4>Offerta</h4>
                             </div>
                             <div class="right_bottom">
-                                <span>Sconto Minorenne</span>
+                                <span id="sales"></span>
                             </div>
                         </div>
+
                         <div class="carriage">
                             <div class="right_top">
                                 <h4>Carrozza</h4>
@@ -64,6 +74,7 @@
                                 <span id="number_carriage"></span>
                             </div>
                         </div>
+
                         <div class="code">
                             <div class="right_top">
                                 <h4>Codice CP</h4>
@@ -72,14 +83,16 @@
                                 <span id="number_code"></span>
                             </div>
                         </div>
+
                         <div class="cost">
                             <div class="right_top">
                                 <h4>Costo Biglietto</h4>
                             </div>
                             <div class="right_bottom">
-                                <span>3,36$</span>
+                                <span id="price"></span>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -87,8 +100,7 @@
         </div>
     </main>
 
-
-
     <script src="./main.js"></script>
+    
 </body>
 </html>

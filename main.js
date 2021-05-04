@@ -40,7 +40,6 @@ btnGenera.addEventListener('click', function() {
         var overPrice = ticketPrice - sconto;
         document.getElementById('price').innerHTML = overPrice.toFixed(2) + ' \u20ac';
     } else if (age.value == 'Maggiorenne') {
-       
         document.getElementById('price').innerHTML = ticketPrice.toFixed(2) + ' \u20ac';
     }
 })

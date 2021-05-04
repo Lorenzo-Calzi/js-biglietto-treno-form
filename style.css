@@ -74,6 +74,9 @@ button{
 .buttons button:first-child{
     border: 2px solid rgba(156, 96, 157, 1);
 }
+button:hover{
+    transform: scale(1.1);
+}
 input{
     text-align: center;
 }
